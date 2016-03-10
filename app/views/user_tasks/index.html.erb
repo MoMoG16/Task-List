@@ -3,10 +3,8 @@
 <h1>To Do List</h1>
 
 <div id="tasks">
-<%= render @user_tasks %>
+  <%= render @user_tasks %>
 </div>
 
-
-<%= link_to 'New User task', new_user_task_path, remote:true %>
-
+<%= link_to 'New User task', new_user_task_path, remote: true %>
 <div id="task-form"></div>
