@@ -6,7 +6,7 @@
    <%= user_task.description %>
  </p>
  <p>
-   <%= link_to 'Edit', edit_user_task_path(user_task) %>
+   <%= link_to 'Edit', edit_user_task_path(user_task), remote:true %>
    <%= link_to 'Destroy', user_task, method: :delete, data: { confirm: 'Are you sure?' } %>
  </p>
 </div>
