@@ -1,0 +1,8 @@
+<div class="text-right">
+  <% if current_user %>
+    <%= link_to fa_icon('sign-out', text: 'Sign Out'), signout_path, id: 'sign_out' %>
+  <% else %>
+    <%= link_to fa_icon('sign-in', text: 'Sign In With Facebook'), '/auth/facebook', id: 'sign_in' %>
+  <% end %>
+
+</div>
